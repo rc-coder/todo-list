@@ -12,7 +12,7 @@ export default function Home() {
             <h1 className="text-xl">To-do List</h1>
           </div>
           <div className="pt-5">
-            <form action={formAction}>
+            <form>
               <input
                 type="text"
                 name="title"
