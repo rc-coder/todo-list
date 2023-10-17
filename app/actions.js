@@ -14,7 +14,7 @@ export async function createTodo(formData) {
     INSERT INTO todos (text, complete)
     VALUES (${todo}, false)
     `;
-    formData.delete('todo');
+    formData.reset();
     revalidatePath('/');
 
     return { message: `Added todo ${todo}` };
